@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: my-deepseek-app
+    runtime: java # 强制指定 Java
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar target/*.jar
+    envVars:
+      - key: DEEPSEEK_API_KEY
+        sync: false
