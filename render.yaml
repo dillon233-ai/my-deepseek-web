@@ -1,5 +1,0 @@
-services:
-  - type: web
-    name: my-deepseek-app
-    runtime: image  # 或者使用更简单的方式，直接在界面手动创建
-    # 其实最稳妥的 yaml 写法是指定具体的 native 环境，但 Render 的 Java 比较特殊
